@@ -1,0 +1,21 @@
+{
+    "name": "Clipboard-Health",
+    "version": "1.0.0",
+    "description": "Clipboard health webpack example using javascript",
+    "start": "index.js",
+    "test": "mocha dpk.test.js --timeout 10000",
+    "scripts": {
+        "test": "mocha dpk.test.js --timeout 10000",
+        "start": "node index.js --timeout 10000"
+    },
+    "dependencies": {
+        "lodash": "^4.17.5"
+    },
+    "devDependencies": {
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^10.17.60",
+        "mocha": "^6.2.0"
+    },
+    "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+    "license": "MIT"
+}
