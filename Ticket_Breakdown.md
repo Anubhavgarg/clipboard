@@ -58,26 +58,29 @@ Assumptions:
 
 
 - Work estimate : 2 hours
-## Implementation: 
-- SQL query table updation
-- In shift table, we will keep on putting the agent id only
+## Implementation ticket for SQL table: 
+- SQL query table updation query
+- In shifts table, we will keep agent id only not custom name as it is there in agent table
 
 
-## A function `getShiftsByFacility` is called with the Facility's id, returning all Shifts worked that quarter, including some metadata about the Agent assigned to each
-- Unit test cases needs to be there where we are sending agent id can be replace with its own custom id only.
+# Function `getShiftsByFacility` is called with the Facility's id, returning all Shifts worked that quarter, including some metadata about the Agent assigned to each
+- Unit test cases where we are sending initially the agent id is there we can send custom name
 - We have facility id as an input to the function.
 - The getShiftsByFacility function returns the custom agent ID, facility ID for each shift           
 
 - Estimation : 1 hour
-# Implementation:
-- We have agent id and facility id in shifts table and we can join agent table and populate custom ame and provide in the getshiftsbyfacility table.
+## Implementation:
+- We have agent id and facility id in shifts table and we can join agent table and populate custom name and provide in the getshiftsbyfacility table.
 
 
-## Report generation
-- Report should have custom agent id and facility id
-- Time/Effort Estimate: 2 hours
-# Implementation:
+# Report generation
+- Report should have custom agent id and facility id and not the internal database id of agent
+- Time/Effort Estimate: 3 hours
+## Implementation:
 - Unit test cases needs to be finalize that whatever agent id data is getting proper custom agent id should come.
+- Migrate agents data with some custom name or make facility to put custom name for all the agents.
+- All custom names data should be present in the database.
+- In generating the reports, we will remove agent id which is internal and add new column that is custom name.
 - In generate report function , we will have facility id and agent id in shifts table. We can join on facility id and agent id on agent table and provide the custom agent name and replace with agent id.
 
 
