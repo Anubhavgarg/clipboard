@@ -48,17 +48,17 @@ Other information
 Assumptions:
 
 
-- If the mapping is 1:many meaning one agent belongs to multiple facilities then:
+- Agent to facility is 1:many meaning one agent belongs to multiple facilities then:
 
 
 
-## SQL TABLE addition
+# SQL TABLE addition
 - We will add a column facility id in agent table.
 - Custom name in agent table where facility will be providing the name at the time of agent creation.
 
 
 - Work estimate : 2 hours
-# Implementation: 
+## Implementation: 
 - SQL query table updation
 - In shift table, we will keep on putting the agent id only
 
